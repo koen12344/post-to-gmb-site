@@ -10,11 +10,11 @@
     <meta property="og:title" content="Post to Google My Business">
     <meta property="og:description" content="The #1 WordPress plugin for managing & scheduling Google My Business posts">
     <meta property="og:image" content="">
-    <meta property="og:url" content="https://posttogmb.com/blog/">
+    <meta property="og:url" content="https://posttogmb.com/tutorials/2020/05/08/auto-publish-woocommerce-products-to-google-my-business/">
     <meta name="twitter:card" content="The #1 WordPress plugin for managing & scheduling Google My Business posts">
     <meta property="og:site_name" content="Post to Google My Business">
     <meta name="twitter:image:alt" content="">
-    <meta property="twitter:title" content="Blog">
+    <meta property="twitter:title" content="Auto-publish WooCommerce products to Google My Business">
     <meta name="twitter:site" content="">
     <link rel="canonical" href="https://posttogmb.com/">
 
@@ -96,8 +96,6 @@
 				<li class="c-navigation__item-wrapper">
 					<a class="c-navigation__item
 							  c-navigation__item--text
-							  
-							  c-navigation__item--active
 							  "
 					   href="/blog/">
 					   <span class="c-navigation__label">Blog</span>
@@ -183,105 +181,152 @@
 
             <!--bookshop-live name(page/page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
           
-    <div class="c-page theme-dark">
-
-    
-    
+          <!--bookshop-live end-->
+        </div>
         
-        <div class="c-posts-list 
-                    component-wrapper
-                    
-                        component-wrapper--light
-                    " 
-             data-cms-editor-link="cloudcannon:#content_blocks[0]">
 
-             <div class="cms-editor-link">
-                <span class="cms-editor-button"></span>
-                <!--bookshop-live name(posts-list/posts-list.jekyll.html) params(bind=block) context(block=content_blocks[0]) -->
+		<div class="layout layout--post">
+			
+			<!--bookshop-live name(post-header/post-header.jekyll.html) params(post=page
+				title=true) context() -->
           
-
-	<div class="c-posts-list__inner-wrapper">
-		
-			<h2 class="c-posts-list__heading">Blog</h2>
-		
-		
-			<p class="c-posts-list__content">Keep up with the latest news.</p>
-		
-
-		
-
-		
-			<!--bookshop-live name(post-preview/post-preview.jekyll.html) params(post=post) context(post=posts[0]) -->
-          
-<div class="n-post-preview__inner-wrapper">
-	<div class="n-post-preview__top">
-		<img class="n-post-preview__preview-image" src="/uploads/post-image-1.png" alt="Auto-publish WooCommerce products to Google My Business image" />
-		<!--bookshop-live name(post-header/post-header.jekyll.html) params(nested=true
-			post=include.post) context() -->
-          
-<div class="n-post-header__inner-wrapper">
-	<h3 class="n-post-header__heading
+<div class="c-post-header__inner-wrapper">
+	<h3 class="c-post-header__heading
+			   
+			   	   c-post-header__heading--title
 			   ">
 			   
-				   <a href="/tutorials/2020/05/08/auto-publish-woocommerce-products-to-google-my-business/">Auto-publish WooCommerce products to Google My Business</a>
+			   		Auto-publish WooCommerce products to Google My Business
 			   
 	</h3>
-	<div class="n-post-header__post-info">
-		<div class="n-post-header__categories">
+	<div class="c-post-header__post-info">
+		<div class="c-post-header__categories">
 			
-				<span class="n-post-header__category">
+				<span class="c-post-header__category">
 					<a href="/category/tutorials">Tutorials</a>
 				</span>
 			
 		</div>
-		<span class="n-post-header__date">08 May 2020</span>
+		<span class="c-post-header__date">08 May 2020</span>
 	</div>
 	
 	
-	<div class="n-post-header__author">
+	<div class="c-post-header__author">
 		<img src="" alt="Photo of " width="30" height="30">
 		<span></span>
 	</div>
 </div>
           <!--bookshop-live end-->
-	</div>
-	<div class="n-post-preview__content">
-		<p>Google has removed the ability to create Product posts through the Google My Business API. This means you can no longer create “real” Product posts using the Post to Google My Business plugin.</p>
+			<p>Google has removed the ability to create Product posts through the Google My Business API. This means you can no longer create “real” Product posts using the Post to Google My Business plugin.</p>
 
-	</div>
+<p>Personally I think Google will be removing the product post type altogether in the near future, in favor of the new <strong>Product Collections</strong> feature. But it’s also <strong>not yet possible</strong> to populate that section using the API (I will definitely add that feature to the plugin once that becomes possible!).</p>
 
-	<!--bookshop-live name(button/button.jekyll.html) params(label="Read More"
-				variant="Filled"
-				link_url=include.post.url) context() -->
+<h2 id="the-solution">The solution</h2>
+
+<p>If you want to bring your latest products and services to the attention of  your (potential) customers, you can simply publish them as <strong>What’s new</strong> or <strong>Offer</strong> posts!</p>
+
+<p>After all, the people that search for your business on Google won’t really be aware of the difference between the various Google My Business post types.</p>
+
+<p>All they see is a picture of your shiny new product, with a “Shop now” button beneath it. <strong>It will be just as effective!</strong></p>
+
+<h2 id="how-to-set-up-the-plugin">How to set up the plugin</h2>
+
+<p>(Auto-)publishing your latest WooCommerce products to Google My Business is easy!</p>
+
+<ol>
+  <li>Make sure the <a href="https://tycoonmedia.net">Post to Google My Business plugin</a> is installed and activated on your WordPress website. The ability to create Product posts is available in the <a href="https://tycoonmedia.net/#pricing">Pro version and up</a>.</li>
+  <li>Enable the <strong>Products</strong> post type in the plugin settings and save the changes.<br /><img src="/uploads/59v30lur3p.png" alt="" width="741" height="394" /></li>
+  <li>The Post to Google My Business panel &amp; Auto Publish checkbox will now be available when you create or update a WooCommerce product</li>
+</ol>
+
+<h2 id="but-how-do-i-get-the-product-details-into-my-gmb-post-text">But how do I get the product details into my GMB post text?</h2>
+
+<p>Visually, the only thing that sets a Product post apart from a regular GMB post is the “Price” field. You can still display the price of the product by including it in your post description.</p>
+
+<p>The plugin can automatically fetch the product price and other details from your WooCommerce product and place them in your GMB post text. You can use the following variables in your post text &amp; auto-post templates:</p>
+
+<ul>
+  <li>%wc_product_price%</li>
+  <li>%wc_product_name%</li>
+  <li>%wc_product_description%</li>
+  <li>%wc_product_short_description%</li>
+  <li>%wc_product_sku% %wc_product_virtual%</li>
+  <li>%wc_product_regular_price%</li>
+  <li>%wc_product_sale_price%</li>
+</ul>
+
+<p>These variables will be automatically replaced by their corresponding value in your final GMB post:</p>
+
+<p><img src="/uploads/plugin-to-gmb.png" alt="" width="900" height="428" /></p>
+
+<p><a href="https://tycoonmedia.net/blog/using-the-quick-publish-feature/">Here’s</a> a list of all variables you can use in your post</p>
+
+<h2 id="auto-publish-your-products-to-gmb">Auto-publish your products to GMB</h2>
+
+<p>The plugin can be configured to automatically publish your Products to Google My Business when you create (or update) them within WordPress.</p>
+
+<ol>
+  <li>In your WordPress Dashboard, navigate to Post to GMB &gt; Settings &gt; Auto-post settings</li>
+  <li>
+    <p>Adjust the template so it fits your needs. For example:</p>
+
+    <blockquote>
+      <p>New product! %wc_product_name% %wc_product_short_description% Price: $%wc_product_price%</p>
+    </blockquote>
+  </li>
+  <li>When creating a new Product, tick the “Auto-post to GMB” checkbox before publishing it.<br /><img src="/uploads/9jgmxd0knp.png" alt="" width="294" height="227" /></li>
+  <li>Hit Publish and your product will be automatically posted to GMB!</li>
+</ol>
+
+<p>You can also tweak the auto-post template right before publishing, if you need to make product-specific changes. This will only change the auto-post template for that specific product, the global template will be unaffected.<br /><img src="/uploads/zzmjhwy7ky.png" alt="" width="352" height="157" /></p>
+
+<p>Additionally, you can enable <strong>Post to GMB by default</strong> in the auto-post settings, so the Auto-post checkbox is checked by default. Note that it will only be checked by default if the product hasn’t been auto-posted to GMB before (to prevent accidentally posting multiple times).</p>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+
+<p>You should now be all set to create beautiful GMB posts from your WooCommerce products, and even be able to automate the whole process! Do you use the auto-post feature in a clever way? I’d love to hear from you in the comments!</p>
+
+			
+				<!--bookshop-live name(author-card/author-card.jekyll.html) params() context() -->
           
 
 
-
-	<a class="n-button
-			  n-button--filled"
-		href="/tutorials/2020/05/08/auto-publish-woocommerce-products-to-google-my-business/"
-		>
-		<span class="n-button__label">Read More</span>
-	</a>
-
-          <!--bookshop-live end-->
+<div class="c-author-card__inner-wrapper">
+	<h4 class="c-author-card__heading">Meet the author</h4>
+	
+		<div class="c-author-card__content">
+	
+		<div class="c-author-card__top">
+			<img class="c-author-card__image" 
+				 src="" 
+				 alt="" />
+			<div class="c-author-card__details">
+				<p class="c-author-card__name"></p>
+				
+				
+			</div>
+		</div>
+		<p class="c-author-card__text"></p>
+	
+		</div>
+	
 </div>
           <!--bookshop-live end-->
+			
+			<!--bookshop-live name(post-navigation/post-navigation.jekyll.html) params() context() -->
+          
+<div class="c-post-navigation__inner-wrapper">
+	
+	
+
+	<div class="c-post-navigation__next-preview">
+		<h2 class="c-post-navigation__heading">Keep Reading</h2>
 		
 	</div>
-
-
+</div>
           <!--bookshop-live end-->
-            </div>
-        </div>
-        
-    
+		</div>
 
-    </div>
-
-          <!--bookshop-live end-->
-        </div>
-        
 
         
 
