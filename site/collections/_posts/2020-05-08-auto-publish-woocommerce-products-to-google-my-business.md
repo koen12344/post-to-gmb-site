@@ -59,7 +59,7 @@ The plugin can be configured to automatically publish your Products to Google My
 2. Adjust the template so it fits your needs. For example:
 
    > New product\! %wc\_product\_name% %wc\_product\_short\_description% Price: $%wc\_product\_price%
-3. When creating a new Product, tick the “Auto-post to GMB” checkbox before publishing it.<br>![](/uploads/9jgmxd0knp.png){: width="294" height="227"}
+3. When creating a new Product, tick the “Auto-post to GMB” checkbox before publishing it.<br>![](/uploads/9jgmxd0knp.png)
 4. Hit Publish and your product will be automatically posted to GMB\!
 
 You can also tweak the auto-post template right before publishing, if you need to make product-specific changes. This will only change the auto-post template for that specific product, the global template will be unaffected.<br>![](/uploads/zzmjhwy7ky.png){: width="352" height="157"}
