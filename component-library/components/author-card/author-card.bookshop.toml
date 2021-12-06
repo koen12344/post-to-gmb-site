@@ -1,0 +1,10 @@
+# This component is not accessible within the CMS
+
+[component]
+structures = []
+label = "Author Card"
+description = ""
+icon = "wysiwyg"
+tags = []
+
+[props]
